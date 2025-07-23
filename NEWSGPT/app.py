@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 import google.generativeai as genai
-from news import NEWS  # Make sure this has a get_news() method
+from news import NEWS  
 
 genai.configure(api_key='REPLACE_YOUR_API_KEY')
 gemini = genai.GenerativeModel('gemini-2.0-flash')
